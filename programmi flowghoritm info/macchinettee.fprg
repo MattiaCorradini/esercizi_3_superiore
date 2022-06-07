@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-15 10:27:04 "/>
+        <attribute name="created" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTU7IjEwOjA0OjM4ICI7MzEzNw=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTU7IjEwOjI3OjA0ICI7MTszMjQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="costo, importo, resto, cent50, cent20, cent10" type="Real" array="False" size=""/>
+            <output expression="&quot;esprimere i prezzi in centesimi (3,30&#8364;=330cent)&quot;" newline="True"/>
+            <assign variable="cent50" expression="0"/>
+            <assign variable="cent20" expression="0"/>
+            <assign variable="cent10" expression="0"/>
+            <input variable="costo"/>
+            <input variable="importo"/>
+            <assign variable="resto" expression="importo-costo"/>
+            <while expression="resto&gt;=50">
+                <assign variable="resto" expression="resto-50"/>
+                <assign variable="cent50" expression="cent50+1"/>
+            </while>
+            <while expression="resto&gt;=20">
+                <assign variable="resto" expression="resto-20"/>
+                <assign variable="cent20" expression="cent20+1"/>
+            </while>
+            <while expression="resto&gt;=10">
+                <assign variable="resto" expression="resto-10"/>
+                <assign variable="cent10" expression="cent10+1"/>
+            </while>
+            <output expression="&quot;come resto avremo&quot;" newline="True"/>
+            <output expression="cent50" newline="True"/>
+            <output expression="&quot;monete da 50 centesimi&quot;" newline="True"/>
+            <output expression="cent20" newline="True"/>
+            <output expression="&quot;monete da 20 centesimi&quot;" newline="True"/>
+            <output expression="cent10" newline="True"/>
+            <output expression="&quot;monete da 10 centesimi&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

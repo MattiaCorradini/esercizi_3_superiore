@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-15 10:41:35 "/>
+        <attribute name="created" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTU7IjEwOjI3OjE4ICI7MzE0MA=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTU7IjEwOjQxOjM1ICI7MTszMjQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, cifraprec, cifrasucc, float" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="float" expression="0"/>
+            <assign variable="cifraprec" expression="n-(int(n/10)*10)"/>
+            <assign variable="n" expression="n/10"/>
+            <while expression="n&gt;0">
+                <assign variable="cifrasucc" expression="n-(int(n/10)*10)"/>
+                <if expression="abs(cifrasucc-cifraprec)&gt;1">
+                    <then>
+                        <assign variable="float" expression="1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="cifraprec" expression="cifrasucc"/>
+                <assign variable="n" expression="n/10"/>
+            </while>
+            <if expression="float==1">
+                <then>
+                    <output expression="&quot;numero non connesso&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;numero connesso&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

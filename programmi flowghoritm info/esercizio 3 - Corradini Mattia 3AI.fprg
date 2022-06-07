@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-22 11:35:59 "/>
+        <attribute name="created" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMjI7IjExOjMxOjIzICI7MzEzMA=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMjI7IjExOjM1OjU5ICI7MTszMjUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, provaDispari" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <while expression="a&gt;0">
+                <assign variable="a" expression="a-1"/>
+                <assign variable="provaDispari" expression="a%2"/>
+                <if expression="provaDispari==0">
+                    <then/>
+                    <else>
+                        <output expression="a" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

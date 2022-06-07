@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-22 11:31:15 "/>
+        <attribute name="created" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMjI7IjExOjIxOjUyICI7MzEzMQ=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMjI7IjExOjMxOjE1ICI7MTszMjM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, numero, positivi, negativi, nulli, pari, dispari, provaPari, i" type="Integer" array="False" size=""/>
+            <assign variable="pari" expression="0"/>
+            <assign variable="dispari" expression="0"/>
+            <assign variable="provaPari" expression="0"/>
+            <assign variable="positivi" expression="0"/>
+            <assign variable="negativi" expression="0"/>
+            <assign variable="nulli" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <input variable="n"/>
+            <while expression="i&lt;n">
+                <input variable="numero"/>
+                <if expression="numero&gt;0">
+                    <then>
+                        <assign variable="positivi" expression="positivi+1"/>
+                        <assign variable="provaPari" expression="numero%2"/>
+                        <if expression="provaPari==0">
+                            <then>
+                                <assign variable="pari" expression="pari+1"/>
+                            </then>
+                            <else>
+                                <assign variable="dispari" expression="dispari+1"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="numero&lt;0">
+                            <then>
+                                <assign variable="negativi" expression="negativi+1"/>
+                            </then>
+                            <else>
+                                <if expression="numero==0">
+                                    <then>
+                                        <assign variable="nulli" expression="nulli+1"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;i numeri negativi sono:&quot;" newline="True"/>
+            <output expression="negativi" newline="True"/>
+            <output expression="&quot;i numeri nulli sono:&quot;" newline="True"/>
+            <output expression="nulli" newline="True"/>
+            <output expression="&quot;i numeri positivi sono:&quot;" newline="True"/>
+            <output expression="positivi" newline="True"/>
+            <output expression="&quot;di cui pari:&quot;" newline="True"/>
+            <output expression="pari" newline="True"/>
+            <output expression="&quot;di cui dispari:&quot;" newline="True"/>
+            <output expression="dispari" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

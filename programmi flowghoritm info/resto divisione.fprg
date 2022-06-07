@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-16 10:20:42 "/>
+        <attribute name="created" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTU7IjAzOjI5OjMyICI7MzE0MA=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTY7IjEwOjIwOjQyICI7MjszMjQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n, resto, divisione" type="Real" array="False" size=""/>
+            <do expression="n1&lt;0 || n2&lt;0">
+                <input variable="n1"/>
+                <input variable="n2"/>
+            </do>
+            <assign variable="divisione" expression="n1/n2"/>
+            <assign variable="resto" expression="int(n1/n2)"/>
+            <assign variable="n" expression="divisione-resto"/>
+            <output expression="n" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-15 04:06:11 "/>
+        <attribute name="created" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTU7IjAzOjUxOjUxICI7MzEzNg=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTU7IjA0OjA2OjExICI7MTszMjQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, i, sas, mcm" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="sas" expression="1"/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <while expression="sas!=0">
+                <assign variable="i" expression="i+1"/>
+                <assign variable="mcm" expression="n1*i"/>
+                <assign variable="sas" expression="mcm%n2"/>
+            </while>
+            <output expression="mcm" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

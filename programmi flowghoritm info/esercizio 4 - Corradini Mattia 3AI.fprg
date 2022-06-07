@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-22 11:45:34 "/>
+        <attribute name="created" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMjI7IjExOjM2OjA0ICI7MzEzNA=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMjI7IjExOjQ1OjM0ICI7MTszMjQ1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, fattoriale, diff" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="diff" expression="n"/>
+            <assign variable="fattoriale" expression="1"/>
+            <while expression="diff&gt;0">
+                <assign variable="fattoriale" expression="fattoriale*diff"/>
+                <assign variable="diff" expression="diff-1"/>
+            </while>
+            <output expression="fattoriale" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

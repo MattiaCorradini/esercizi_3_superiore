@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-15 03:29:16 "/>
+        <attribute name="created" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTU7IjAzOjA2OjM1ICI7MzEzOA=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTU7IjAzOjI5OjE2ICI7MTszMjUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, numero, divi, a" type="Integer" array="False" size=""/>
+            <assign variable="divi" expression="1"/>
+            <assign variable="a" expression="0"/>
+            <input variable="n"/>
+            <while expression="divi&lt;=n">
+                <assign variable="numero" expression="n%divi"/>
+                <if expression="numero==0">
+                    <then>
+                        <output expression="divi" newline="True"/>
+                        <assign variable="a" expression="a+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="divi" expression="divi+1"/>
+            </while>
+            <output expression="&quot;n &#232; dunque divisibile per numeri:&quot;" newline="True"/>
+            <output expression="a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

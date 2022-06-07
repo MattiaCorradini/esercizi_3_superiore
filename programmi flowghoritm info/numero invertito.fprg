@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Studente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-15 03:51:34 "/>
+        <attribute name="created" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTU7IjAzOjQxOjM3ICI7MzEzOQ=="/>
+        <attribute name="edited" value="U3R1ZGVudGU7REVTS1RPUC1HVENKS1NJOzIwMjEtMTAtMTU7IjAzOjUxOjM0ICI7MTszMjQ1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, ninvertito, resto" type="Integer" array="False" size=""/>
+            <assign variable="ninvertito" expression="0"/>
+            <input variable="n"/>
+            <while expression="n&gt;0">
+                <assign variable="resto" expression="n%10"/>
+                <assign variable="ninvertito" expression="ninvertito*10+resto"/>
+                <assign variable="n" expression="(n-resto)/10"/>
+            </while>
+            <output expression="ninvertito" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
